@@ -29,6 +29,13 @@ def get_product(req):
   db.close()
 
   return render_to_response('templates/product.html', {'users': records}, request=req)
+  
+def get_kvp(req):
+  
+
+  return render_to_response('templates/kvp.html')
+
+
 
 
 
@@ -45,6 +52,11 @@ if __name__ == '__main__':
   
   config.add_route('get_product', '/home')
   config.add_view(get_product, route_name='get_product')
+  
+  config.add_route('get_kvp', '/kvp')
+  config.add_view(get_kvp, route_name='get_kvp')
+
+
 
   config.add_static_view(name='/', path='./public', cache_max_age=3600)
 
