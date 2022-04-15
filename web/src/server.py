@@ -31,11 +31,13 @@ def get_product(req):
   return render_to_response('templates/product.html', {'users': records}, request=req)
   
 def get_kvp(req):
-  
+  db = mysql.connect(host=db_host, database=db_name, user=db_user, passwd=db_pass)
+  cursor = db.cursor()
+  cursor.execute("select first_name, last_name, email from Users;")
+  records = cursor.fetchall()
+  db.close()
 
-  return render_to_response('templates/kvp.html')
-
-
+  return render_to_response('templates/kvp.html', {'users': records}, request=req)
 
 
 
