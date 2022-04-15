@@ -20,7 +20,15 @@ def get_home(req):
 
   return render_to_response('templates/home.html', {'users': records}, request=req)
   
+def get_product(req):
+  # Connect to the database and retrieve the users
+  db = mysql.connect(host=db_host, database=db_name, user=db_user, passwd=db_pass)
+  cursor = db.cursor()
+  cursor.execute("select first_name, last_name, email from Users;")
+  records = cursor.fetchall()
+  db.close()
 
+  return render_to_response('templates/product.html', {'users': records}, request=req)
 
 
 
@@ -35,6 +43,8 @@ if __name__ == '__main__':
   config.add_view(get_home, route_name='get_home')
   
   
+  config.add_route('get_product', '/home')
+  config.add_view(get_product, route_name='get_product')
 
   config.add_static_view(name='/', path='./public', cache_max_age=3600)
 
