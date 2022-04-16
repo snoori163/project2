@@ -8,7 +8,7 @@ h1{
   font-family: Arial;
   font-weight: bold;
   font-size: 4rem;
-  color: lightblue;
+  color: grey;
   text-align: center;
 }
 
@@ -32,7 +32,7 @@ h1{
 .kvp{
     display: inline-block;
     width: 40%;
-  margin: 2rem;
+    margin: 2rem;
     padding: 0.5rem;
     margin-top: 2rem;
     background-color: grey;

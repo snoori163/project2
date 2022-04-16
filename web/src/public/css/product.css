@@ -10,13 +10,13 @@ h1{
   font-family: Arial;
   font-weight: bold;
   font-size: 4rem;
-  color: lightblue;
+  color: grey;
   text-align: center;
 }
 
 .product{
     padding: 2rem;
-    width: 80%;
+    
     margin: 2rem;
     background-color: grey;
     color: white;
