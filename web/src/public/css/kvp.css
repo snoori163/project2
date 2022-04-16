@@ -1,0 +1,55 @@
+body{
+    background-image: url('../images/img2.jpeg');
+}
+
+h1{
+  margin: 2rem;
+  padding: 1rem;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 4rem;
+  color: lightblue;
+  text-align: center;
+}
+
+
+.kvpp{
+    display: inline-block;
+    width: 40%;
+  margin: 2rem;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    background-color: grey;
+    color: white;
+    
+    font-family: Comic Sans MS, cursive, sans-serif;
+   
+    font-size: 1rem;
+    border-radius: 10px;
+    
+}
+
+.kvp{
+    display: inline-block;
+    width: 40%;
+  margin: 2rem;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    background-color: grey;
+    color: white;
+    
+    font-family: Comic Sans MS, cursive, sans-serif;
+   
+    font-size: 1rem;
+    border-radius: 10px;
+    
+}
+.title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.answer{
+  text-align: center;
+}
