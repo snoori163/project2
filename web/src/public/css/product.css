@@ -16,10 +16,7 @@ h1{
 
 .product{
     padding: 3rem;
-    margin-left: 3rem;
-    margin-right: 5rem;
-    margin-bottom: 4rem;
-    margin-top: 2rem;
+    margin: 2rem;
     background-color: purple;
     color: white;
     text-align: center;
