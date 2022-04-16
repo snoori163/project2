@@ -1,0 +1,26 @@
+
+body{
+    background-image: url('../images/img.jpeg');
+    
+    
+}
+h1{
+  margin: 2rem;
+  padding: 1rem;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 4rem;
+  color: lightblue;
+  text-align: center;
+}
+
+.product{
+    
+    color: white;
+    
+    font-family: Comic Sans MS, cursive, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+  
+    
+}
